@@ -37,6 +37,13 @@
           </ul>
         </nav>
 
+        <!-- BURGER BUTTON -->
+        <button class="burger-btn" type="button">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-burger_menu"></use>
+          </svg>
+        </button>
+
         <address class="contacts">
           <ul class="contacts-list">
             <li>
@@ -131,7 +138,13 @@
 
           <ul class="team-list">
             <li class="team-item">
-              <img src="./images/mark.jpg" alt="Mark Guerrero" width="264" />
+              <img
+                src="./images/mark.jpg"
+                alt="Mark Guerrero"
+                width="264"
+                srcset="./images/mark.jpg 1x, ./images/mark@x2.jpg 2x"
+              />
+
               <div class="team-content">
                 <h3 class="team-item-title">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
@@ -185,7 +198,13 @@
             </li>
 
             <li class="team-item">
-              <img src="./images/tom.jpg" alt="Tom Ford" width="264" />
+              <img
+                src="./images/tom.jpg"
+                alt="Tom Ford"
+                width="264"
+                srcset="./images/tom.jpg 1x, ./images/tom@x2.jpg 2x"
+              />
+
               <div class="team-content">
                 <h3 class="team-item-title">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -239,7 +258,13 @@
             </li>
 
             <li class="team-item">
-              <img src="./images/camila.jpg" alt="Camila Garcia" width="264" />
+              <img
+                src="./images/camila.jpg"
+                alt="Camila Garcia"
+                width="264"
+                srcset="./images/camila.jpg 1x, ./images/camila@x2.jpg 2x"
+              />
+
               <div class="team-content">
                 <h3 class="team-item-title">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
@@ -293,7 +318,12 @@
             </li>
 
             <li class="team-item">
-              <img src="./images/daniel.jpg" alt="Daniel Wilson" width="264" />
+              <img
+                src="./images/daniel.jpg"
+                alt="Daniel Wilson"
+                width="264"
+                srcset="./images/daniel.jpg 1x, ./images/daniel@x2.jpg 2x"
+              />
               <div class="team-content">
                 <h3 class="team-item-title">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
@@ -360,6 +390,10 @@
                   src="./images/banking-app.jpg"
                   alt="Banking App"
                   width="360"
+                  srcset="
+                    ./images/banking-app.jpg    1x,
+                    ./images/banking-app@x2.jpg 2x
+                  "
                 />
                 <div class="overlay">
                   <p class="overlay-text">
@@ -381,6 +415,10 @@
                   src="./images/cashless-payment.jpg"
                   alt="Cashless Payment"
                   width="360"
+                  srcset="
+                    ./images/cashless-payment.jpg    1x,
+                    ./images/cashless-payment@x2.jpg 2x
+                  "
                 />
                 <div class="overlay">
                   <p class="overlay-text">
@@ -402,6 +440,10 @@
                   src="./images/meditation-app.jpg"
                   alt="Meditation App"
                   width="360"
+                  srcset="
+                    ./images/meditation-app.jpg    1x,
+                    ./images/meditation-app@x2.jpg 2x
+                  "
                 />
                 <div class="overlay">
                   <p class="overlay-text">
@@ -423,6 +465,10 @@
                   src="./images/taxi-service.jpg"
                   alt="Taxi Service"
                   width="360"
+                  srcset="
+                    ./images/taxi-service.jpg    1x,
+                    ./images/taxi-service@x2.jpg 2x
+                  "
                 />
                 <div class="overlay">
                   <p class="overlay-text">
@@ -444,6 +490,10 @@
                   src="./images/screen-illustrations.jpg"
                   alt="Screen Illustrations"
                   width="360"
+                  srcset="
+                    ./images/screen-illustrations.jpg    1x,
+                    ./images/screen-illustrations@2.jpg 2x
+                  "
                 />
                 <div class="overlay">
                   <p class="overlay-text">
@@ -465,6 +515,10 @@
                   src="./images/online-courses.jpg"
                   alt="Online Courses"
                   width="360"
+                  srcset="
+                    ./images/online-courses.jpg    1x,
+                    ./images/online-courses@2.jpg 2x
+                  "
                 />
                 <div class="overlay">
                   <p class="overlay-text">
@@ -567,8 +621,8 @@
     </footer>
 
     <!-- MODALKA -->
-
-    <div class="backdrop is-open">
+    <!-- is-open -->
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close">
           <svg class="icon-close-black" width="8" height="8">
@@ -665,5 +719,86 @@
         </form>
       </div>
     </div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+      <div class="mobile-menu-container">
+        <button class="mobile-menu-close" type="button">
+          <svg width="24" height="24" class="close-icon">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li><a class="mobile-nav-link current" href="">Studio</a></li>
+            <li><a class="mobile-nav-link" href="">Portfolio</a></li>
+            <li><a class="mobile-nav-link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <div class="mobile-bottom">
+          <ul class="mobile-contacts">
+            <li>
+              <a class="mobile-contacts-link" href="tel:+110001111111">
+                +11 (000) 111-11-11
+              </a>
+            </li>
+            <li>
+              <a
+                class="mobile-contacts-link email"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+
+          <ul class="mobile-socials">
+            <li>
+              <a href="" class="mobile-social-link">
+                <svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="mobile-social-link">
+                <svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="mobile-social-link">
+                <svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="mobile-social-link">
+                <svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script>
+      const openBtn = document.querySelector('.burger-btn');
+      const closeBtn = document.querySelector('.mobile-menu-close');
+      const menu = document.querySelector('.mobile-menu');
+
+      openBtn.addEventListener('click', () => {
+        menu.classList.add('is-open');
+      });
+
+      closeBtn.addEventListener('click', () => {
+        menu.classList.remove('is-open');
+      });
+    </script>
   </body>
 </html>
