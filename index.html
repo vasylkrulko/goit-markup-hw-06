@@ -596,6 +596,7 @@
           </ul>
         </div>
 
+        <!-- INPUT -->
         <div class="footer-subscribe">
           <p class="footer-subscribe-title">Subscribe</p>
 
@@ -705,7 +706,7 @@
 
             <label for="user-policy" class="checkbox-label">
               <span class="checkbox-custom">
-                <svg width="10" height="8">
+                <svg class="checkbox-custom-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
@@ -787,5 +788,18 @@
         </div>
       </div>
     </div>
+    <script>
+      const openBtn = document.querySelector('.burger-btn');
+      const closeBtn = document.querySelector('.mobile-menu-close');
+      const menu = document.querySelector('.mobile-menu');
+
+      openBtn.addEventListener('click', function () {
+        menu.classList.add('is-open');
+      });
+
+      closeBtn.addEventListener('click', function () {
+        menu.classList.remove('is-open');
+      });
+    </script>
   </body>
 </html>
