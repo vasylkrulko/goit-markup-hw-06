@@ -1274,4 +1274,8 @@ img {
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url('../images/hero-desktop@2x.jpg');
   }
+  .portfolio-list {
+    row-gap: 48px;
+    column-gap: 24px;
+  }
 }
