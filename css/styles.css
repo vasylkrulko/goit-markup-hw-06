@@ -1260,10 +1260,8 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 768px) and (max-width: 1157px) and (min-resolution: 192dpi) {
   .hero {
-    max-width: 768px;
-    margin: 0 auto;
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 46, 66, 0.7)),
       url('../images/hero-tablet@2x.jpg');
